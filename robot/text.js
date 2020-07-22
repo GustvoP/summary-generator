@@ -37,6 +37,7 @@ async function robot(content) {
             return text.replace(/\((?:\([^()]*\)|[^()])*\)/gm, "").replace(/  /g, " ");
         }
     }
+
 }
 
 module.exports = robot;
