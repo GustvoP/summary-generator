@@ -27,3 +27,5 @@ npm install
 ## Testando
 
 Execute o comando `node index.js` no terminal. Pronto!
+
+# NÃO FINALIZADO!

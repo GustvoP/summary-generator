@@ -1,6 +1,6 @@
 const fs = require('fs')
 const docx = require("docx");
-const { Spacing } = require('docx');
+const { Spacing, HeadingLevel, AlignmentType } = require('docx');
 
 const { Document, Packer, Paragraph, TextRun } = docx;
 
@@ -16,15 +16,17 @@ async function documento(content) {
         properties: {},
         children: [
             new Paragraph({
-                children: [
-                    new TextRun(content.searchTerm),
-                ]
+                text: content.searchTerm,
+                heading: HeadingLevel.HEADING_1,
+                alignment: AlignmentType.CENTER,
+                spacing: {
+                    after: 200
+                }
             }),
 
             new Paragraph({
-                children: [
-                    new TextRun(content.sourceContentSanitized),
-                ],
+                text: content.sourceContentSanitized,
+                alignment: AlignmentType.JUSTIFIED
             }),
         ],
     });
