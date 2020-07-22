@@ -12,7 +12,7 @@ npm install
 
 ## Algorithmia Credentials
 
-1. Crie uma conta no site do Algorithmia.
+1. Crie uma conta no site do [Algorithmia](https://algorithmia.com/).
 2. Na página principal, já logado, vá na aba API Keys e copie a key.
 3. Entre na pasta "summary-generator" que foi criada anteriormente.
 4. Crie uma pasta chamada "credentials" na raiz do projeto, e dentro dela crie um arquivo chamado "algorithmia.json".
