@@ -2,6 +2,9 @@ const readline = require("readline-sync");
 const robot = {
     text: require("./robot/text.js"),
 };
+const documento = {
+    documen: require("./doc.js"),
+};
 
 async function start() {
     const content = {};
@@ -10,6 +13,7 @@ async function start() {
     content.prefix = askAndReturnPrefix();
 
     await robot.text(content);
+    await documento.documen(content);
 
     function askAndReturnSearchTerm() {
         return readline.question("Type the search term: ");
