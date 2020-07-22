@@ -1,0 +1,23 @@
+{
+  "name": "summary-generator",
+  "version": "1.0.0",
+  "description": "Gerador de Resumo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustvoP/summary-generator.git"
+  },
+  "author": "Gustavo Poffo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustvoP/summary-generator/issues"
+  },
+  "homepage": "https://github.com/GustvoP/summary-generator#readme",
+  "dependencies": {
+    "algorithmia": "^0.3.10",
+    "readline-sync": "^1.4.10"
+  }
+}
